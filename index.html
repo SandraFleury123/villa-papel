@@ -1,123 +1,124 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Villa Papel – Presentes Artesanais</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=EB+Garamond&display=swap" rel="stylesheet">
+  <title>Villa Papel</title>
   <style>
     body {
+      font-family: 'Georgia', serif;
+      background-color: #f9f8f6;
       margin: 0;
-      font-family: 'EB Garamond', serif;
-      background-color: #fdfaf6;
-      color: #4a4a4a;
+      padding: 0;
+      color: #4d4d4d;
     }
     header {
-      background-color: #f3e7df;
+      background-color: #ffffff;
       padding: 40px 20px;
       text-align: center;
+      border-bottom: 1px solid #e0e0e0;
     }
     header h1 {
-      font-family: 'Raleway', sans-serif;
-      font-size: 2.5em;
       margin: 0;
+      font-size: 2.5em;
+      color: #b08984;
     }
     header p {
       font-style: italic;
-      margin-top: 10px;
+      color: #888;
     }
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      padding: 40px 20px;
-      gap: 30px;
-    }
-    .product {
-      background-color: #fff;
-      border: 1px solid #e0dcd7;
-      border-radius: 10px;
-      width: 300px;
-      padding: 20px;
+    nav {
+      background-color: #e7d7ce;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      padding: 10px 0;
     }
-    .product img {
-      width: 100%;
-      border-radius: 10px;
-    }
-    .product h2 {
-      font-family: 'Raleway', sans-serif;
-      font-size: 1.2em;
-      margin: 10px 0;
-    }
-    .product p {
-      font-size: 0.95em;
-    }
-    .whatsapp {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 10px 15px;
-      background-color: #25d366;
-      color: white;
-      border: none;
-      border-radius: 5px;
+    nav a {
+      margin: 0 15px;
       text-decoration: none;
+      color: #4d4d4d;
       font-weight: bold;
     }
-    .about {
-      padding: 40px 20px;
-      background-color: #f7f3ef;
+    .hero {
+      background: url('banner.jpg') center/cover no-repeat;
+      padding: 100px 20px;
       text-align: center;
+      color: #fff;
+      background-color: #dccfc4;
     }
-    .about h2 {
-      font-family: 'Raleway', sans-serif;
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .hero a {
+      background-color: #a6a58d;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
     }
     footer {
+      background-color: #eee;
       text-align: center;
       padding: 20px;
-      font-size: 0.85em;
-      background-color: #f3e7df;
+      font-size: 0.9em;
+      color: #666;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 15px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Villa Papel</h1>
-    <p>“Tudo o que é feito com alma, permanece no coração de quem recebe.”</p>
+    <p>Encadernação artesanal e personalização</p>
   </header>
 
-  <section class="products">
-    <div class="product">
-      <img src="https://via.placeholder.com/300x200?text=Di%C3%A1rio+de+Vida" alt="Diário de Vida">
-      <h2>Diário de Vida – Meu Legado para Você</h2>
-      <p>Um livro com 200 perguntas para registrar histórias e memórias inesquecíveis.</p>
-      <a href="https://wa.me/5562991000090?text=Olá! Tenho interesse no Diário de Vida." class="whatsapp" target="_blank">Comprar pelo WhatsApp</a>
-    </div>
+  <nav>
+    <a href="#home">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#loja">Loja</a>
+    <a href="#personalize">Personalize</a>
+    <a href="#contato">Contato</a>
+  </nav>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/300x200?text=Caneca+Personalizada" alt="Caneca personalizada">
-      <h2>Caneca Personalizada</h2>
-      <p>Criações exclusivas com frases emocionais e design delicado, para presentear com afeto.</p>
-      <a href="https://wa.me/5562991000090?text=Olá! Tenho interesse na Caneca Personalizada." class="whatsapp" target="_blank">Comprar pelo WhatsApp</a>
-    </div>
+  <div class="hero">
+    <h2>Presentes com alma, artesanalmente criados para eternizar memórias.</h2>
+    <a href="#loja">Explorar a Loja Villa Papel</a>
+  </div>
 
-    <div class="product">
-      <img src="https://via.placeholder.com/300x200?text=Almofada+Afetiva" alt="Almofada personalizada">
-      <h2>Almofada Afetiva</h2>
-      <p>Conforto com propósito: almofadas com mensagens tocantes e toque artesanal.</p>
-      <a href="https://wa.me/5562991000090?text=Olá! Tenho interesse na Almofada Afetiva." class="whatsapp" target="_blank">Comprar pelo WhatsApp</a>
-    </div>
-  </section>
-
-  <section class="about">
+  <section id="sobre">
     <h2>Sobre a Villa Papel</h2>
-    <p>Desde 2015, Sandrinha Fleury transforma sentimentos em presentes com alma. Cada peça é feita artesanalmente com cuidado e beleza única, criando memórias eternas.</p>
+    <p>
+      Na Villa Papel, acreditamos que cada presente pode carregar uma história. Somos apaixonados por transformar sentimentos em papel, cerâmica e detalhes únicos. Criamos peças personalizadas com alma, feitas artesanalmente e com muito afeto.
+    </p>
+    <p>
+      Da encadernação artesanal ao design personalizado, tudo nasce da sensibilidade e do amor pelo feito à mão.
+      <strong>Villa Papel é mais do que uma loja: é um espaço de criação, memória e afeto.</strong>
+    </p>
+    <p><em>Idealizado por Sandrinha Fleury, com mãos que criam e coração que acolhe.</em></p>
   </section>
 
   <footer>
-    © 2025 Villa Papel – Encadernação Artesanal e Personalização | WhatsApp: (62) 99100-0090 | Instagram: @villa.papel
+    <p>✨ Idealizado por Sandrinha Fleury, com mãos que criam e coração que acolhe.</p>
+    <p>&copy; 2015 Villa Papel – Todos os direitos reservados</p>
   </footer>
+
+  <a class="whatsapp" href="https://wa.me/5562991000090" target="_blank">💬</a>
 </body>
 </html>
