@@ -1,124 +1,102 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Villa Papel</title>
-  <style>
-    body {
-      font-family: 'Georgia', serif;
-      background-color: #f9f8f6;
-      margin: 0;
-      padding: 0;
-      color: #4d4d4d;
-    }
-    header {
-      background-color: #ffffff;
-      padding: 40px 20px;
-      text-align: center;
-      border-bottom: 1px solid #e0e0e0;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-      color: #b08984;
-    }
-    header p {
-      font-style: italic;
-      color: #888;
-    }
-    nav {
-      background-color: #e7d7ce;
-      text-align: center;
-      padding: 10px 0;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #4d4d4d;
-      font-weight: bold;
-    }
-    .hero {
-      background: url('banner.jpg') center/cover no-repeat;
-      padding: 100px 20px;
-      text-align: center;
-      color: #fff;
-      background-color: #dccfc4;
-    }
-    .hero h2 {
-      font-size: 2em;
-      margin-bottom: 10px;
-    }
-    .hero a {
-      background-color: #a6a58d;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
-    }
-    footer {
-      background-color: #eee;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-      color: #666;
-    }
-    .whatsapp {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      padding: 15px;
-      border-radius: 50%;
-      text-align: center;
-      font-size: 24px;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa Papel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F9F8F6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #EBDCD3;
+        }
+        nav {
+            margin: 15px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #A6A58D;
+            font-weight: bold;
+        }
+        .banner {
+            background-image: url('banner.png');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .banner h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .banner a {
+            background-color: #DAB1AA;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            color: #A6A58D;
+        }
+        .section p {
+            max-width: 600px;
+            margin: auto;
+            color: #666;
+        }
+        .footer-links {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Villa Papel</h1>
-    <p>Encadernação artesanal e personalização</p>
-  </header>
+    <header>
+        <img src="logo.png" alt="Villa Papel" width="200">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#loja">Loja</a>
+            <a href="#personalize">Personalize</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
 
-  <nav>
-    <a href="#home">Início</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#loja">Loja</a>
-    <a href="#personalize">Personalize</a>
-    <a href="#contato">Contato</a>
-  </nav>
+    <section class="banner" id="home">
+        <h1>Presentes com alma, feitos artesanalmente para eternizar memórias.</h1>
+        <a href="#loja">Conheça a loja</a>
+    </section>
 
-  <div class="hero">
-    <h2>Presentes com alma, artesanalmente criados para eternizar memórias.</h2>
-    <a href="#loja">Explorar a Loja Villa Papel</a>
-  </div>
+    <section class="section" id="destaques">
+        <h2>Destaques</h2>
+        <p>Feito à mão com amor | Criações únicas</p>
+    </section>
 
-  <section id="sobre">
-    <h2>Sobre a Villa Papel</h2>
-    <p>
-      Na Villa Papel, acreditamos que cada presente pode carregar uma história. Somos apaixonados por transformar sentimentos em papel, cerâmica e detalhes únicos. Criamos peças personalizadas com alma, feitas artesanalmente e com muito afeto.
-    </p>
-    <p>
-      Da encadernação artesanal ao design personalizado, tudo nasce da sensibilidade e do amor pelo feito à mão.
-      <strong>Villa Papel é mais do que uma loja: é um espaço de criação, memória e afeto.</strong>
-    </p>
-    <p><em>Idealizado por Sandrinha Fleury, com mãos que criam e coração que acolhe.</em></p>
-  </section>
+    <section class="section" id="sobre">
+        <h2>Sobre a Villa Papel</h2>
+        <p>Na Villa Papel, acreditamos que cada presente pode carregar uma história. Criamos peças personalizadas com alma, feitas à mão e com muito afeto. Idealizado por Sandrinha Fleury.</p>
+        <a href="#saibamais">Saiba mais</a>
+    </section>
 
-  <footer>
-    <p>✨ Idealizado por Sandrinha Fleury, com mãos que criam e coração que acolhe.</p>
-    <p>&copy; 2015 Villa Papel – Todos os direitos reservados</p>
-  </footer>
-
-  <a class="whatsapp" href="https://wa.me/5562991000090" target="_blank">💬</a>
+    <footer>
+        <p>Siga no Instagram: <a href="https://instagram.com/villa.papel" target="_blank">@villa.papel</a></p>
+        <div class="footer-links">Villa Papel &copy; 2025</div>
+    </footer>
 </body>
 </html>
